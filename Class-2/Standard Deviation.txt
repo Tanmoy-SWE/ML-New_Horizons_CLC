@@ -1,0 +1,9 @@
+import math
+list = [5,4,9,2,6,12,22,43,15]
+sum = sum(list)
+mean = sum / len(list)
+sum = 0
+for i in list:
+  sum = sum + ((mean - i) ** 2)
+std = math.sqrt(sum/len(list))
+print(std)
